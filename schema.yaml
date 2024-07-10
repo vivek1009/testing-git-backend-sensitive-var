@@ -1,0 +1,22 @@
+# Title shown in Application Information tab.
+title: Testing git backend and sensitive variables
+# Sub Title shown in Application Information tab.
+description: Testing git backend and sensitive variables
+schemaVersion: 1.0.0
+version: "20210701"
+locale: "en"
+
+variableGroups:
+  - title: "Database Details"
+    variables:
+      - ${db_admin_password}
+
+
+variables:
+  
+  db_admin_password:
+      title: "Database Administrator Password"
+      type: password
+      required: true
+      description: "Password"
+  
